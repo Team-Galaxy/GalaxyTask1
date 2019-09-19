@@ -1,0 +1,211 @@
+/* general */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #444444;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%232e3431' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%238d8d8d'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+[class*="col-"] {
+  padding: 1rem;
+}
+
+#log-in-form-div,
+#sign-up-form-div {
+  max-width: 500px;
+}
+
+.navbar {
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+    text-align: right;
+  }
+}
+
+.back-to-login {
+  font-size: smaller;
+}
+
+/* Header */
+#top-head ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#top-head ul li {
+  display: inline-block;
+}
+
+#top-head .cart-button {
+  text-align: right;
+}
+
+#top-head .pad {
+  margin: 0px 4px;
+}
+
+#top-head .pad button[type="button"] {
+  border-color: white;
+  color: white;
+  border-radius: 0;
+  padding: 0.375rem 1.7rem;
+}
+
+#top-head .pad button[type="button"]:hover {
+  border-color: #99792c;
+  background-color: #99792c;
+}
+
+#top-head .pad .fa-phone,
+.pad .fa-envelope {
+  color: #99792c;
+}
+
+.navbar {
+  background-color: #222222 !important;
+}
+
+#top-head {
+  background-color: transparent;
+  color: rgb(245, 243, 240);
+}
+
+header .container-fluid,
+header .container-fluid #top-head .btn {
+  font-size: 12px;
+}
+
+.subheading {
+  color: #99792c !important;
+}
+
+#top-head .left-icons {
+  padding-top: 10px;
+}
+
+._top-head {
+  background-color: black;
+}
+/* /TopHeader */
+
+/*SignUP and log In*/
+
+#sign-up-form,
+#log-in-form {
+  width: auto;
+  margin: 30px auto;
+  position: relative;
+}
+
+@media only screen and (min-width: 992px) {
+  #sign-up-form,
+  #log-in-form {
+    width: 400px !important;
+    margin: 50px auto;
+    position: relative;
+  }
+}
+
+#sign-up-form .form-control:focus,
+#log-in-form .form-control:focus {
+  box-shadow: 0 0 0 0.2rem #99782c5e !important;
+  border-color: #916e1c !important;
+}
+
+#log-in-form .action-button {
+  display: block;
+}
+
+#sign-up-form fieldset,
+#log-in-form fieldset {
+  background: white;
+  border: 0 none;
+  /* border-radius: 18px; */
+  /* box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2); */
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/*buttons*/
+#sign-up-form .action-button,
+#log-in-form .action-button {
+  width: 100%;
+  background: #99792c;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+#sign-up-form .action-button:hover,
+#sign-up-form .action-button:focus,
+#log-in-form .action-button:hover,
+#log-in-form .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #99792c;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+
+/*New*/
+/* LogIn */
+body > div.container {
+  padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  body > div.container {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+
+button[value="Google"] {
+  background-color: #fff;
+  border-color: #4885ed;
+  border-radius: 20px;
+  color: #000000;
+}
+
+button[value="Google"] img {
+  width: 20px;
+  padding-bottom: 3px;
+}
+
+button[value="Facebook"] {
+  background-color: #3b5998;
+  border-color: #3b5998;
+  border-radius: 20px;
+}
+#log-in-form > fieldset > div:nth-child(2) > small {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#log-in-form > fieldset > div:nth-child(2) > small:-webkit-any-link {
+  cursor: pointer;
+}
+#log-in-form > fieldset > div:nth-child(2) > small:hover {
+  color: #0056b3 !important;
+  text-decoration: underline;
+}

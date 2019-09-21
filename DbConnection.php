@@ -9,10 +9,10 @@
 
         protected function GalDbconnect() {
 
-            $this->serverName ="root";
-            $this->userName = "b10_24512343";
-            $this->password = "t31mG1l1xy";
-            $this->GalDbname = "b10_24512343_Task1";
+            $this->serverName ="";
+            $this->userName = "";
+            $this->password = "";
+            $this->GalDbname = "";
             $this->charset = "utf8mb4";
 
             try {

@@ -211,3 +211,7 @@ button[value="Facebook"] {
   color: #0056b3 !important;
   text-decoration: underline;
 }
+
+#matchText{
+  visibility: hidden;
+}
